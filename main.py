@@ -1,2 +1,5 @@
 import streamlit as st
-st.header("Data ")
+
+st.title("Data ")
+
+#st.file_uploader
