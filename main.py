@@ -1,9 +1,9 @@
 import streamlit as st
 import pandas as pd
 import io
-import matplotlib.pylot as plt
+import matplotlib.pyplot as plt
 
-st.title("Data ")
+st.title("Data")
 
 st.header("Upload data file")
 data_file = st.file_uploader('Choose a csv file', type=(['.csv']))
