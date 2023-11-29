@@ -22,3 +22,9 @@ if data_file is not None:
   st.text(buffer.getvalue())
 
   st.header('Visualize each attribute')
+  for col in list(df.columns):
+    fig, ax = plt.subplots()
+    ax.hist(df[col], bin = 20)
+    plt.xlablel(col)
+    plt.ylablel(col)
+
