@@ -1,7 +1,7 @@
 import streamlit as st
 import pandas as pd
 import io
-import matplotlib as plt
+import matplotlib.pylot as plt
 
 st.title("Data ")
 
