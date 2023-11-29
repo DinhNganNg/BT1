@@ -2,6 +2,7 @@ import streamlit as st
 import pandas as pd
 import io
 import matplotlib.pyplot as plt
+import seaborn as sns
 
 st.title("Data")
 
@@ -29,4 +30,9 @@ if data_file is not None:
     plt.xlabel(col)
     plt.ylabel('Quanlity')
     st.pyplot(fig)
+
+  st.header('Show correlation between variable')
+  fig, ax = plt.subplots()
+  sns.heatmap(df.corr(method='pearson'), ax=ax, vmax=1, square=True, annot=True, cmap='Red')
+  st.write(fig)
 
