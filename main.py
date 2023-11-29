@@ -26,7 +26,7 @@ if data_file is not None:
   for col in list(df.columns):
     fig, ax = plt.subplots()
     ax.hist(df[col], bin = 20)
-    plt.xlablel(col)
-    plt.ylablel('Quanlity')
+    plt.xlabel(col)
+    plt.ylabel('Quanlity')
     st.pyplot(fig)
 
