@@ -27,6 +27,6 @@ if data_file is not None:
     fig, ax = plt.subplots()
     ax.hist(df[col], bin = 20)
     plt.xlablel(col)
-    plt.ylablel('Q')
-    plt.show()
+    plt.ylablel('Quanlity')
+    st.pyplot(fig)
 
