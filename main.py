@@ -5,7 +5,7 @@ import io
 import matplotlib.pyplot as plt
 import seaborn as sns
 
-st.title("Data")
+st.title("Data exploration")
 
 st.header("Upload data file")
 data_file = st.file_uploader('Choose a csv file', type=(['.csv']))
